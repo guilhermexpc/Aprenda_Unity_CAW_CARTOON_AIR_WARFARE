@@ -39,9 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Primeiro_Plano
-    uniqueID: 1175908511
-    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Primeiro_Plano
+    uniqueID: 1175908511
     locked: 0

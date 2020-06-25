@@ -36,7 +36,13 @@ public class PlayerController : MonoBehaviour
     private void Shot()
     {
         GameObject shotTemp = Instantiate(prefabShot);
+        GameObject shotTemp2 = Instantiate(prefabShot);
+        GameObject shotTemp3 = Instantiate(prefabShot);
         shotTemp.transform.position = armaPosicao.position;
+        shotTemp2.transform.position = armaPosicao.position + new Vector3(-0.2f, -0.25f);
+        shotTemp3.transform.position = armaPosicao.position + new Vector3(0.2f, -0.25f);
         shotTemp.GetComponent<Rigidbody2D>().velocity = new Vector2(0, velocidadeTiro);
+        shotTemp2.GetComponent<Rigidbody2D>().velocity = new Vector2(0, velocidadeTiro);
+        shotTemp3.GetComponent<Rigidbody2D>().velocity = new Vector2(0, velocidadeTiro);
     }
 }
