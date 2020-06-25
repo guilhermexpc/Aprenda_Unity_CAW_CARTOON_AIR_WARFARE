@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class GameController : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class GameController : MonoBehaviour
     public float cameraVelocidade;
     public Transform cameraLimiteLeft;
     public Transform cameraLimiteRight;
+    public Transform cameraPosFinal;
+    public float cameraVelocidadeFase;
 
     
 
@@ -62,7 +65,9 @@ public class GameController : MonoBehaviour
 
     private void LateUpdate()
     {
-        //Debug.LogWarning(cam.transform.position + " - " + cameraLimiteLeft.position + " - - " + cameraLimiteRight.position);
+
+        cam.transform.position = Vector3.MoveTowards(cam.transform.position, new Vector3(cam.transform.position.x, cameraPosFinal.position.y, -10), cameraVelocidadeFase * Time.deltaTime);
+
         if (cam.transform.position.x > cameraLimiteLeft.position.x && cam.transform.position.x < cameraLimiteRight.position.x)
         {
             CameraMover();
