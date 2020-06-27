@@ -24,8 +24,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159526785}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.005, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.022, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6915080394995030109}
@@ -91,11 +91,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6915080394995030109}
   - component: {fileID: 43091194086909628}
-  - component: {fileID: 1263941791235763840}
+  - component: {fileID: 3776522132371086654}
   - component: {fileID: 218548264315497510}
+  - component: {fileID: -5602064316643761554}
   m_Layer: 0
-  m_Name: Inimigo_01
-  m_TagString: Untagged
+  m_Name: Inimigo_DiscoVoador
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,7 +153,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1175908511
-  m_SortingLayer: -1
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 18968e4033f90994fa470bd36cd2c37d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -165,19 +166,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1263941791235763840
-BoxCollider:
+--- !u!61 &3776522132371086654
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3715299889388528618}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.057764202, y: 0.39609754}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.67, y: 2.71}
+    newSize: {x: 2.67, y: 2.71}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2980924, y: 0.9294956, z: 0.2}
-  m_Center: {x: 0.066247225, y: 0.35740316, z: 0}
+  m_Size: {x: 1.0830309, y: 0.8697226}
+  m_EdgeRadius: 0
 --- !u!114 &218548264315497510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,4 +204,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eedfb1a5d34c9342b73638fdfec6c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _GameController: {fileID: 0}
+  _PlayerController: {fileID: 0}
+  score: 10
   tfArma: {fileID: 1159526786}
+--- !u!114 &-5602064316643761554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3715299889388528618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff62b39889c1ce4cb58a54a2700c70b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inimigoAtaque: 1
+  tfArma: {fileID: 1159526786}
+  armaVelocidade: 3
+  armaDelay: 0.75
+  idCurva: 0
+  velocidadeMovimento: 2
+  pontoInicialCurva: 0
+  grausCurva: 0
+  incrementar: 0
