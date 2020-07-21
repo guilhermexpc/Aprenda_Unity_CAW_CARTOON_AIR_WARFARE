@@ -90,7 +90,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator OnHitEfeito()
     {
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 20; i++)
         {
             sprNave.color = Color.clear;
             sprFumaca.color = Color.clear;

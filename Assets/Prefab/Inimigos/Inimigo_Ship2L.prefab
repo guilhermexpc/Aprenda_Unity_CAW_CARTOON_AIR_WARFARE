@@ -223,7 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inimigoAtaque: 0
   tfArma: {fileID: 1159526786}
-  armaVelocidade: 3
+  armaVelocidade: 5
   armaDelay: 0.75
   idCurva: 1
   velocidadeMovimento: 4

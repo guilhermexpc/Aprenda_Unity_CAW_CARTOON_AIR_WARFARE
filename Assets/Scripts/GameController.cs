@@ -113,7 +113,6 @@ public class GameController : MonoBehaviour
             cenario.position = Vector3.MoveTowards(cenario.position, new Vector3(cenario.position.x, cenarioPosFinal.position.y, 0), cenarioVelocidade * Time.deltaTime);
             if (cenario.position.y <= cenarioPosFinal.position.y)
             {
-                print("foi");
                 currentState = GameState.vitoria;
                 StartCoroutine(GameVitoria());
             }

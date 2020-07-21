@@ -51,6 +51,7 @@ public class Inimigo : MonoBehaviour
             case "playerShot":
                 {
                     OnHit();
+                    Destroy(collision.gameObject);
                     break;
                 }
 

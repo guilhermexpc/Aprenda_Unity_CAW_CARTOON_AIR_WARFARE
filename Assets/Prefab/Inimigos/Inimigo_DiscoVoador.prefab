@@ -208,6 +208,7 @@ MonoBehaviour:
   _PlayerController: {fileID: 0}
   score: 10
   tfArma: {fileID: 1159526786}
+  insideCenario: 0
 --- !u!114 &-5602064316643761554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,7 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inimigoAtaque: 1
   tfArma: {fileID: 1159526786}
-  armaVelocidade: 3
+  armaVelocidade: 4.5
   armaDelay: 0.75
   idCurva: 0
   velocidadeMovimento: 2

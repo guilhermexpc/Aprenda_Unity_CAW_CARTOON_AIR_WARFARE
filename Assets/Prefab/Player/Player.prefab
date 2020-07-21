@@ -58,7 +58,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4937209448472496246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.07, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4937209448005634173}
@@ -181,8 +181,8 @@ MonoBehaviour:
   sprNave: {fileID: 4937209448472496245}
   sprFumaca: {fileID: 4937209448698886769}
   velocidade: 10
-  velocidadeTiro: 5
-  fireRate: 0.25
+  velocidadeTiro: 6
+  fireRate: 0.35
   vida: 3
 --- !u!1 &4937209448698886771
 GameObject:
